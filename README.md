@@ -11,8 +11,9 @@ MADSEQ-R package for mosaic aneuploidy detection
 
 ## Install 
 ```{r}
-source("https://bioconductor.org/biocLite.R")
-biocLite("MADSEQ")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("MADSEQ")
 ```
 
 ###Install from GitHub
